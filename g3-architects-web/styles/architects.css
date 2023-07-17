@@ -16,6 +16,7 @@
     cursor: pointer;
     border: 0;
 }
+
 .secion-description {
     color: #727272;
 }
@@ -34,7 +35,7 @@ nav {
     align-items: center;
 }
 
-.nav-title {
+.section-title {
     color: #131313;
     font-size: 2.8rem;
 }
@@ -76,15 +77,44 @@ nav li a {
     width: 100%;
     margin-top: 40px;
 }
+
 /* section-features */
-.features{
+.teams-container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    margin-top: 5.3rem;
 }
-.grid-img{
+
+.teams-img-cotainer {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
-    
+    grid-template-columns: repeat(2, 1fr);
+    padding-right: 4.75rem;
+    padding-left: 6rem;
+    gap: 1.5rem;
+    width: 100%;
+
+}
+
+/* .teams-content{
+    padding-right: 18.813rem;
+} */
+.teams-title {
+    font-size: 2.8rem;
+
+    font-weight: 500;
+}
+.Ql{
+    color: #727272;
+    font-weight: 500;
+}
+.Oo{
+    color: #131313;
+    font-weight: 700;
+}
+.Fea{
+    color: #FF900E;
+    font-weight: 700;
 }
 
 
@@ -94,20 +124,23 @@ nav li a {
 /* responsive media queries */
 /* mobiles */
 @media screen and (max-width:576px) {
-    nav{
+    nav {
         flex-direction: column;
     }
-    header{
+
+    header {
         padding: 20px;
     }
-    
+
 }
+
 /* tablets */
-@media  screen and (min-width:576px) and (max-width:960px) {
-    nav{
+@media screen and (min-width:576px) and (max-width:960px) {
+    nav {
         flex-direction: column;
     }
-    header{
+
+    header {
         padding: 20px;
     }
 }
