@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responisve---media-query</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            
+            gap: 10px;
+           
+        }
+        .food{
+            border: 1px solid brown;
+            border-radius: 10px;
+            padding: 20px;
+        }
+        .food img{
+            width: 200px;
+        }
+        /* REsponsive way */
+        /* smaller device */
+        @media screen and (max-width: 576px){
+            .container{
+                grid-template-columns: repeat(1,1fr);
+            }
+            .food{
+                background-color: aqua;
+            }
+        }
+        @media screen and (min-width:577px) and (max-width:990px){
+            .container{
+                grid-template-columns: repeat(3,1fr);
+            }
+            .food{
+                background-color: brown;
+            }
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="food">
+            <img src="images/burger.avif" alt="">
+            <h3>Food Item-1</h3>
+            <P>price: $100</P>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa culpa non iure voluptatibus, qui facere suscipit consectetur maxime magnam odit!</p>
+        </div>
+        <div class="food">
+            <img src="images/burger.avif" alt="">
+            <h3>Food Item-2</h3>
+            <P>price: $200</P>
+            <p>Corporis neque eligendi veritatis! Delectus neque quibusdam est provident consequuntur doloremque minima at. Ipsam, quod nihil corrupti hic commodi architecto!</p>
+        </div>
+        <div class="food">
+            <img src="images/burger.avif" alt="">
+            <h3>Food Item-3</h3>
+            <P>price: $300</P>
+            <p>Non, laborum quasi? Iure soluta similique quis inventore omnis quasi laborum aperiam repellendus sit veritatis possimus porro, dicta ad voluptatum.</p>
+        </div>
+        <div class="food">
+            <img src="images/burger.avif" alt="">
+            <h3>Food Item-4</h3>
+            <P>price: $400</P>
+            <p>Tempore doloribus voluptatem laborum ex. Debitis labore dolor iure amet saepe quo nobis eveniet repellat, pariatur totam nihil ex porro?</p>
+        </div>
+        <div class="food">
+            <img src="images/burger.avif" alt="">
+            <h3>Food Item-5</h3>
+            <P>price: $500</P>
+            <p>Eius corporis, nulla consectetur fugit quod nostrum omnis sit quisquam nihil voluptas ex deleniti qui expedita error odio incidunt unde!</p>
+        </div>
+        <div class="food">
+            <img src="images/burger.avif" alt="">
+            <h3>Food Item-6</h3>
+            <P>price: $600</P>
+            <p>Magni, temporibus. Incidunt temporibus quia consequatur ex minus maiores id cupiditate voluptatem quis, aperiam praesentium modi enim. Sint, amet harum?</p>
+        </div>
+        <div class="food">
+            <img src="images/burger.avif" alt="">
+            <h3>Food Item-7</h3>
+            <P>price: $700</P>
+            <p>Ratione est, illo ab voluptate corporis autem non alias dolorum, consequuntur eos blanditiis quibusdam. Eligendi consequuntur iure dolorum consectetur cum.</p>
+        </div>
+        <div class="food">
+            <img src="images/burger.avif" alt="">
+            <h3>Food Item-8</h3>
+            <P>price: $800</P>
+            <p>Doloribus laborum libero porro veritatis similique aut, suscipit itaque ad, sapiente, est sit voluptate vitae dignissimos cupiditate quaerat unde temporibus.</p>
+        </div>
+        <div class="food">
+            <img src="images/burger.avif" alt="">
+            <h3>Food Item-9</h3>
+            <P>price: $900</P>
+            <p>Ad rem ratione accusantium iste veniam maiores commodi reiciendis veritatis, ea necessitatibus saepe, quidem impedit asperiores minima debitis dolore ullam.</p>
+        </div>
+        <div class="food">
+            <img src="images/burger.avif" alt="">
+            <h3>Food Item-10</h3>
+            <P>price: $1000</P>
+            <p>Sint laboriosam quod voluptatum aliquam consequatur minima nesciunt eius aperiam provident velit ea sit odio laudantium cumque, saepe quo enim?</p>
+        </div>
+        <div class="food">
+            <img src="images/burger.avif" alt="">
+            <h3>Food Item-11</h3>
+            <P>price: $1100</P>
+            <p>Nihil perspiciatis animi doloribus pariatur reiciendis. Facere obcaecati veniam repellendus minima, nulla a corrupti consequuntur dolorum, neque perferendis exercitationem maiores?</p>
+        </div>
+        <div class="food">
+            <img src="images/burger.avif" alt="">
+            <h3>Food Item-12</h3>
+            <P>price: $1200</P>
+            <p>Veniam alias voluptatem autem laborum omnis rerum quas maxime minus, dignissimos tenetur ducimus, aspernatur adipisci quae quo atque quaerat voluptates!</p>
+        </div>
+    </div>
+    </div>
+</body>
+</html>

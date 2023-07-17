@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Flex</title>
+    <style>
+        .container{
+            display: flex;
+
+            gap: 10px;
+
+
+        }
+        .column{
+            color: antiquewhite;
+            background-color: darkgreen;
+            border: 2px solid yellow;
+            border-radius: 15px;
+            padding: 1em;
+
+        }
+        .container2{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .item{
+            color: aqua;
+            background-color: brown;
+            border: 1px solid yellowgreen;
+            height: 100px;
+        }
+
+        .pic-writing{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            margin-top: 30px;
+            flex-direction: column;
+        }
+        img{
+            width: 200px;
+            width: 400px;
+        }
+        @media screen and (max-width:576px) {
+            .container{
+                flex-direction: column;
+            }
+            .item{
+                background-color: magenta;
+            }
+            .pic-writing{
+                flex-direction: row-reverse;
+            }
+            .p{
+                border: 10px solid tomato;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h2>Flexible flex</h2>
+    <div class="container">
+        <div class="column">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio maxime sed corporis incidunt ab quo assumenda veniam expedita eos numquam?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta iste soluta non, iusto odit maiores corrupti magni qui fuga temporibus minus obcaecati, dolor molestiae, aut cum quisquam expedita adipisci? Quos!</p>
+        </div>
+        <div class="column">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo non magni voluptatibus magnam tempore. Modi explicabo delectus officia autem. Quae! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae animi molestias voluptatibus dolorum nostrum dolorem aspernatur facilis voluptatum, harum porro? Eius modi asperiores facilis vel quod saepe omnis quos nobis!</p>
+        </div>
+    </div>
+    <div class="container2">
+        <div class="item">item-1</div>
+        <div class="item">item-2</div>
+        <div class="item">item-3</div>
+        <div class="item">item-4</div>
+        <div class="item">item-5</div>
+        <div class="item">item-6</div>
+        <div class="item">item-7</div>
+        <div class="item">item-8</div>
+        <div class="item">item-9</div>
+        <div class="item">item-10</div>
+        <div class="item">item-11</div>
+        <div class="item">item-12</div>
+        <div class="item">item-13</div>
+        <div class="item">item-14</div>
+        <div class="item">item-15</div>
+        <div class="item">item-16</div>
+        <div class="item">item-17</div>
+        <div class="item">item-18</div>
+        <div class="item">item-19</div>
+    </div>
+    <section class="pic-writing">
+        <div class="p">
+            <img src="images/Mizan.png" alt="">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro neque ut laboriosam aspernatur exercitationem qui aut natus, tempora delectus nesciunt sint ea distinctio expedita hic praesentium odit excepturi vero quam. Eos provident quos officia vero architecto temporibus excepturi veniam impedit!</p>
+
+        </div>
+        <div class="p">
+            <img src="images/burger.avif" alt="" srcset="">
+            <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat nam corrupti fugit est cupiditate. Totam amet impedit, soluta ab nisi delectus, numquam voluptas eaque, ducimus deserunt libero asperiores harum neque!</p>
+        </div>
+        <div class="p">
+            <img src="images/Mizan.png" alt="">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro neque ut laboriosam aspernatur exercitationem qui aut natus, tempora delectus nesciunt sint ea distinctio expedita hic praesentium odit excepturi vero quam. Eos provident quos officia vero architecto temporibus excepturi veniam impedit!</p>
+
+        </div>
+        <div class="p">
+            <img src="images/burger.avif" alt="" srcset="">
+            <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat nam corrupti fugit est cupiditate. Totam amet impedit, soluta ab nisi delectus, numquam voluptas eaque, ducimus deserunt libero asperiores harum neque!</p>
+        </div>
+
+    </section>
+</body>
+</html>
