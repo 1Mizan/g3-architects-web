@@ -17,10 +17,19 @@
     border: 0;
 }
 
-.secion-description {
+.section-description {
     color: #727272;
 }
 
+.section-title {
+    color: #131313;
+    font-size: 2.8rem;
+}
+
+/* main{
+    margin: 85px  240px;
+
+} */
 /* header styles */
 header {
     /* display: flex; */
@@ -35,10 +44,7 @@ nav {
     align-items: center;
 }
 
-.section-title {
-    color: #131313;
-    font-size: 2.8rem;
-}
+
 
 nav>ul {
     display: flex;
@@ -83,40 +89,67 @@ nav li a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 5.3rem;
+    /* margin-top: 5.3rem; */
 }
 
 .teams-img-cotainer {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     padding-right: 4.75rem;
-    padding-left: 6rem;
+    /* padding-left: 6rem; */
     gap: 1.5rem;
-    width: 100%;
+    /* width: 100%; */
 
 }
 
 /* .teams-content{
     padding-right: 18.813rem;
 } */
-.teams-title {
+.teams-img-title {
     font-size: 2.8rem;
-
     font-weight: 500;
 }
-.Ql{
+
+.Ql {
     color: #727272;
     font-weight: 500;
 }
-.Oo{
+
+.Oo {
     color: #131313;
     font-weight: 700;
 }
-.Fea{
+
+.Fea {
     color: #FF900E;
     font-weight: 700;
 }
 
+/* facts section */
+.facts-card-container {
+    display: flex;
+    justify-content: space-around;
+}
+.card-title{
+    color: #424242;
+    font-size: 45px;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+
+
+.facts-card-container .card {
+    border-radius: 8px;
+    border: 1px solid #FF900E;
+    text-align: center;
+    padding: 30px;
+    /* padding-top: 45px;
+    padding-right: 42px;
+    padding-left: 42px;
+    padding-bottom: 60px; */
+}
 
 
 
@@ -124,19 +157,28 @@ nav li a {
 /* responsive media queries */
 /* mobiles */
 @media screen and (max-width:576px) {
-    nav {
+
+    nav,
+    .teams-container {
         flex-direction: column;
+    }
+
+    .teams-img-cotainer {
+        grid-template-columns: 1fr;
     }
 
     header {
         padding: 20px;
     }
 
+
 }
 
 /* tablets */
 @media screen and (min-width:576px) and (max-width:960px) {
-    nav {
+
+    nav,
+    .teams-container {
         flex-direction: column;
     }
 
